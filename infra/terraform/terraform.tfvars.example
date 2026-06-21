@@ -1,0 +1,21 @@
+# 복사해서 terraform.tfvars 로 사용하세요: cp terraform.tfvars.example terraform.tfvars
+
+project = "calculation"
+region  = "ap-northeast-2"
+owner   = "aerim"
+
+# 보안: 본인 공인 IP로 제한 권장 (확인: curl ifconfig.me)
+# allowed_cidrs = ["1.2.3.4/32"]
+allowed_cidrs = ["0.0.0.0/0"]
+
+# SSH 키페어가 있으면 지정. 없으면 SSM Session Manager로 접속.
+# key_name = "my-keypair"
+
+# OpenSearch 서비스 연결 역할이 계정에 없으면 true 로
+create_opensearch_slr = false
+
+# PostgreSQL(pgvector) 필요 시 true
+enable_rds = false
+
+# 비용 절감: ec2_instance_type = "t3.medium"
+ec2_instance_type = "t3.large"

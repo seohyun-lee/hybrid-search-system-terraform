@@ -1,0 +1,43 @@
+# === Terraform ===
+**/.terraform/
+**/.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.tfvars
+!*.tfvars.example
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# === Secrets / credentials ===
+*.pem
+*.key
+*.p12
+*.pfx
+.env
+.env.*
+!.env.example
+credentials
+*credentials*.json
+
+# === macOS ===
+.DS_Store
+**/.DS_Store
+
+# === Python ===
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+
+# === Editor / misc ===
+*.log
+.idea/
+.vscode/
