@@ -35,7 +35,7 @@
 - OpenSearch에서 키워드(BM25) + 시맨틱(kNN) 하이브리드 검색
 
 ## 데이터셋
-- [dalle-mini/open-images](https://huggingface.co/datasets/dalle-mini/open-images) 등에서
+- [lmms-lab/flickr30k](https://huggingface.co/datasets/lmms-lab/flickr30k)에서
   비어있지 않은 항목 위주로 ~10K 샘플링하여 색인.
 
 ## 디렉토리
